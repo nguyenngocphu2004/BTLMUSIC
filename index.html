@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,14 +23,11 @@
                     <button type="button" id="btn-user" class="btn"><i class="fa-solid fa-user"></i></button>
                     <ul id="v-user" class="v-user">
                         <li><a href="" class="log123">Đăng kí</a></li>
-                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="" class="log1234" >Đăng nhập</a></li>
                     </ul>
                 </div>
             </form>
         </div>
-        <script>
-            
-        </script>
     </header>
     <main class="flex">
         <section class="left">
@@ -48,76 +46,151 @@
                 </li>
                 <li class="flex nav">
                     <button class="btn-new"><i class="fa-solid fa-barcode"></i></button>
-                    <a href="">Chủ đề</a>
+                    <a href="">Thể loại</a>
                 </li>
             </ul>
         </section>
         <section class="right">
             <div class="slider">
                 <div class="item">
-                    <img src="./assests/img/Screenshot 2023-07-31 195237.png" alt=""> 
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
                 </div>
                 <div class="item">
-                    <img src="./assests/img/Screenshot 2023-07-31 195237.png" alt=""> 
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
                 </div>
                 <div class="item">
-                    <img src="./assests/img/Screenshot 2023-07-31 195237.png" alt=""> 
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
                 </div>
                 <div class="item">
-                    <img src="./assests/img/Screenshot 2023-07-31 195237.png" alt=""> 
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
                 </div>
                 <div class="item">
-                    <img src="./assests/img/Screenshot 2023-07-31 195237.png" alt=""> 
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assests/img/RapViet2020.jpeg" alt="">
                 </div>
                 <button class="" id="next">></button>
                 <button class="" id="prev"></button>
-                
             </div>
-        </section>
+            <div class="container">
+                <ul class="flex header header-container">
+                    <li><h2>Nghệ sĩ</h2></li>
+                    <li><div><a href="#">TẤT CẢ &rarr;</a></div></li>
+                </ul>
+                <ul class="flex v-container" id="artists">
+                    <li>
+                        <div>
+                            <div>
+                                <a href="">
+                                    <img src="./assests/img/Artists/01-artist.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>    
+                            </div>
+                            <a href="">Test</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="flex header header-container">
+                    <li><h2>Thể loại</h2></li>
+                    <li><div><a href="#">TẤT CẢ &rarr;</a></div></li>
+                </ul>
+                <ul class="flex v-container" id="categorys">
+                    <li>
+                        <div>
+                            <div>
+                                <a href="">
+                                    <img src="./assests/img/RapViet2020.jpeg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>    
+                            </div>
+                            <a href="">Test</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>  
     </main>
-    <div class="modal open">
-            <div class="modal-body">
-                    <div class="auto-form">
-                        <div class="auto-form-header">
-                            <h3 class="auto-form-heading">Đăng ký </h3>
-                            <span class="auto-form-switch-btn">Đăng nhập </span>
+    <div class="modal ">
+        <div class="modal-body">
+            <div> class="modal-fly"></div>
+                <div class="auto-form">
+                    <div class="auto-form-header">
+                        <h3 class="auto-form-heading">Đăng ký </h3>
+                        <span class="auto-form-switch-btn">Đăng nhập </span>
+                    </div>
+                    <div class="auto-form-form">
+                        <div class="auto-form-group">
+                            <input type="text" class="auth-form-input" placeholder="Email của bạn">
+                     </div>
+                     <div class="auto-form-form">
+                            <input type="password" class="auth-form-input" placeholder="password của bạn">
                         </div>
                         <div class="auto-form-form">
-                            <div class="auto-form-group">
-                                <input type="text" class="auth-form-input" placeholder="Email của bạn">
-                         </div>
-                         <div class="auto-form-form">
-                                <input type="password" class="auth-form-input" placeholder="password của bạn">
-                            </div>
-                            <div class="auto-form-form">
-                                <input type="password" class="auth-form-input" placeholder="Nhập lại mật khẩu của bạn">
-                            </div>
-                                <div class="auto-form-aside">
-                                    <p class="auto-form-p">
-                                        Bằng việc đăng kí, bạn đã đồng ý với TPmusic về
-                                        <a href="" class="auto-form-p1">Điều khoản dịch vụ </a>&
-                                        <a href="" class="auto-form-p1">Chính sách bảo mật </a>
-                                    </p>
-                                </div>
-                            </div>
+                            <input type="password" class="auth-form-input" placeholder="Nhập lại mật khẩu của bạn">
                         </div>
-                        <div class="auto-form-controls">
-                            <button class="btn123 auto-form-controls-back exit">Thoát</button>
-                            <button class="btn123">Đăng ký</button>
-                        </div>
-                        <div class="auto-form-">
-                            <a href="" class="btn123 bth-- ">
-                                <i class="iconsocial fa-brands fa-facebook"></i>
-                                Kết nối với facebook
-                            </a>
-                            <a href="" class="btn123 bth--">
-                                <i class="iconsocial fa-brands fa-google"></i>
-                                Kết nối với google
-                            </a>
+                            <div class="auto-form-aside">
+                                <p class="auto-form-p">
+                                    Bằng việc đăng kí, bạn đã đồng ý với TPmusic về
+                                    <a href="" class="auto-form-p1">Điều khoản dịch vụ </a>&
+                                    <a href="" class="auto-form-p1">Chính sách bảo mật </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="auto-form-controls">
+                        <button class="btn123 auto-form-controls-back exit">Thoát</button>
+                        <button class="btn123">Đăng ký</button>
+                    </div>
+                    <div class="auto-form-">
+                        <a href="" class="btn123 bth-- ">
+                            <i class="iconsocial fa-brands fa-facebook"></i>
+                            Kết nối với facebook
+                        </a>
+                        <a href="" class="btn123 bth--">
+                            <i class="iconsocial fa-brands fa-google"></i>
+                            Kết nối với google
+                        </a>
+                    </div>
+                </div>
+        </div>
+</div>
+<div class="modal1 ">
+    <div class="modal-body">
+        <div class="modal-fly"></div>
+            <div class="auto-form">
+                <div class="auto-form-header">
+                    <h3 class="auto-form-heading">Đăng nhập </h3>
+                    <span class="auto-form-switch-btn">Đăng kí </span>
+                </div>
+                <div class="auto-form-form">
+                    <div class="auto-form-group">
+                        <input type="text" class="auth-form-input" placeholder="Email của bạn">
+                 </div>
+                 <div class="auto-form-form">
+                        <input type="password" class="auth-form-input" placeholder="password của bạn">
+                </div>
+                <div class="auto-form-controls">
+                    <button class="btn123 auto-form-controls-back exit1">Thoát</button>
+                    <button class="btn123">Đăng nhập</button>
+                </div>
+                <div class="auto-form-">
+                    <a href="" class="btn123 bth-- ">
+                        <i class="iconsocial fa-brands fa-facebook"></i>
+                        Kết nối với facebook
+                    </a>
+                    <a href="" class="btn123 bth--">
+                        <i class="iconsocial fa-brands fa-google"></i>
+                        Kết nối với google
+                    </a>
+                </div>
             </div>
     </div>
+</div>
     <script src="./js/index.js"></script>
 </body>
 </html>
+
+
