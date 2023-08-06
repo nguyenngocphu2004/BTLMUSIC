@@ -13,7 +13,7 @@ function clickEnd(e) {
 }
 function clickFull(btnE, e) {
   let userClicked = false;
-  let userClicking = false;
+  let userClicking  = false;
   btnE.onclick = function () {
     if (userClicked) {
       e.style.display = "none";
@@ -96,3 +96,16 @@ window.onload = function () {
   // });
   
 };
+let a=document.querySelector('.log123')
+let modal=document.querySelector('.modal')
+let b=document.querySelector('.exit')
+function showLog(){
+  modal.classList.add('open')
+}
+a.addEventListener('click', showLog)
+function hideLog(){
+  modal.classList.remove('open')
+}
+b.addEventListener('click', hideLog)
+
+
