@@ -110,9 +110,6 @@ function loadShow() {
     items[i].style.opacity = stt > 2 ? 0 : 0.6;
   }
 }
-
-
-
 window.onload = function () {
   loadArtists();
   loadCategorys();
@@ -144,28 +141,33 @@ window.onload = function () {
   // slider.addEventListener("mouseout", () => {
   //   autoSlideTimer = setInterval(autoSlideShow, autoSlideInterval);
   // });
-  
 };
-let a=document.querySelector('.log123')
-let modal=document.querySelector('.modal')
-let modal1=document.querySelector('.modal1')
-let c=document.querySelector('.log1234')
-let b=document.querySelector('.exit')
-let b1=document.querySelector('.exit1')
+let register=document.querySelector('.js-register')
+let modal=document.querySelector('.js-modal')
+let modal1=document.querySelector('.js-modal1')
+let login=document.querySelector('.js-login')
+let exit=document.querySelector('.exit')
+let exit1=document.querySelector('.exit1')
 function showLog(){
   modal.classList.add('open')
 }
-a.addEventListener('click', showLog)
+register.addEventListener('click',showLog)
 function hideLog(){
   modal.classList.remove('open')
 }
+exit.addEventListener('click',hideLog)
 function showLog1(){
-  modal1.classList.add('open1')
+  modal1.classList.add('open')
 }
 function hideLog1(){
-  modal1.classList.remove('open1')
+  modal1.classList.remove('open')
 }
-b.addEventListener('click', hideLog)
-c.addEventListener('click',showLog1)
-b1.addEventListener('click', hideLog1)
+login.addEventListener('click',showLog1)
+exit1.addEventListener('click',hideLog1)
+
+
+
+
+
+
 

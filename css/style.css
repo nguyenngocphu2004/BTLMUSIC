@@ -132,17 +132,17 @@ ul.v-user:after {
     right: 25%;
 }
 
-ul.v-user > li {
+ul.v-user > li >button{
     list-style-type: none;
     border-bottom: 1px solid var(--blackblue);
     background: transparent;
 }
 
-ul.v-user > li:last-child {
+ul.v-user > li:last-child >button{
     border-bottom: none;
 }
 
-ul.v-user > li > a {
+ul.v-user > li > button {
     text-decoration: none;
     color: var(--white);
     display: block;
@@ -151,11 +151,11 @@ ul.v-user > li > a {
     font-size: 1.2rem;
 }
 
-ul.v-user > li:first-child > a{
+ul.v-user > li:first-child > button{
     border-radius: 0.8rem 0.8rem 0 0;
 }
 
-ul.v-user > li:last-child > a{
+ul.v-user > li:last-child > button{
     border-radius: 0 0 0.8rem 0.8rem;
 }
 
@@ -340,15 +340,16 @@ ul.menu > li > button {
     background: rgb(0,0,0,0.4);
 }
 .modal-body{
-    position: relative;
     margin:  auto;
     border-radius: 5px;
     background-color: var(--blueviolet);
     color:#ffffff;
+    position: relative;
 }
 .auto-form{
     padding: 0 32px;
     width: 600px;
+    
 }
 .auto-form-header{
     margin-top: 20px;
@@ -425,8 +426,6 @@ ul.menu > li > button {
 .modal.open{
     display: flex;
 }
-.modal1.open1{
-    display: flex;
-}
+
 
 
